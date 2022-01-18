@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Fasil Marshooq</Authors>
+    <Product>Number to Words</Product>
+    <Description>Number To words convertor with currency support. currently supported Languages are Arabic, Hindi, Nepali and English.
+Supported currencies out of the box are USD and SAR.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/fasilmarshooq/Bee.NumberToText</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/fasilmarshooq/Bee.NumberToText</RepositoryUrl>
+    <PackageTags>NumberToArabic; NumberToSARWordsl NumberToUsdWords; USDInWords; CurrencyInWords; AmountInWords; NumberToText;Numeric; NumericToWords; CurrencyToWords; InWords; Currency In Words; Number In Words; ToWords; AmountToWords; Nepali; Devnagari; Unicode; DecimalToWords; Nepali Number To Words; Amount To Words; Hindi Number To Words; Hindi Currency To Text</PackageTags>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Bee.NumberToWords/v16
+/Bee.NumberToWords/bin/Debug/net5.0
+/Bee.NumberToWords/obj
+/WordConversionTests/bin/Debug/net5.0
+/WordConversionTests/obj
