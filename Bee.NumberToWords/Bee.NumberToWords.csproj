@@ -10,7 +10,8 @@ Supported currencies out of the box are USD and SAR.</Description>
     <PackageProjectUrl>https://github.com/fasilmarshooq/Bee.NumberToText</PackageProjectUrl>
     <RepositoryUrl>https://github.com/fasilmarshooq/Bee.NumberToText</RepositoryUrl>
     <PackageTags>NumberToArabic; NumberToSARWordsl NumberToUsdWords; USDInWords; CurrencyInWords; AmountInWords; NumberToText;Numeric; NumericToWords; CurrencyToWords; InWords; Currency In Words; Number In Words; ToWords; AmountToWords; Nepali; Devnagari; Unicode; DecimalToWords; Nepali Number To Words; Amount To Words; Hindi Number To Words; Hindi Currency To Text</PackageTags>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
+    <PackageReleaseNotes>Added extension support for number to text</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
