@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bee.NumberToWords", "Bee.NumberToWords\Bee.NumberToWords.csproj", "{1C3220A8-F3B4-45E9-B286-0719C3B8C907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordConversionTests", "WordConversionTests\WordConversionTests.csproj", "{1BB9E0E5-5580-4D00-BFE6-97E92462ACB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C3220A8-F3B4-45E9-B286-0719C3B8C907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3220A8-F3B4-45E9-B286-0719C3B8C907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3220A8-F3B4-45E9-B286-0719C3B8C907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3220A8-F3B4-45E9-B286-0719C3B8C907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB9E0E5-5580-4D00-BFE6-97E92462ACB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB9E0E5-5580-4D00-BFE6-97E92462ACB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB9E0E5-5580-4D00-BFE6-97E92462ACB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB9E0E5-5580-4D00-BFE6-97E92462ACB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9368CF3E-D644-43E8-9085-62A147D6D30B}
+	EndGlobalSection
+EndGlobal
