@@ -1,10 +1,12 @@
 name: Publish Packages
+
 on:
   push:
-    branches: [ Main ]
+    branches: [ main ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
@@ -16,9 +18,11 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
     - name: Publish package
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
-          PROJECT_FILE_PATH: Bee.NumberToWords/Bee.NumberToWords.csproj
+          PROJECT_FILE_PATH: Bee.NumberToText/Bee.NumberToText.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
