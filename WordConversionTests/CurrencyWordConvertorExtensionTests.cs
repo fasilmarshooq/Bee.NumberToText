@@ -38,7 +38,34 @@ namespace WordConversionTests
         {
             const decimal input = 437015.59M;
             string actualResult = input.ToArabicWords(Currency.SAR);
-            const string expectedResult = "أَرْبَعَة مليون سَبْعَة و ثَلَاثُونَ ألف خَمْسَةَ عَشَرَ ريال و تِسْعَة و خَمْسُونَ هللة فقط";
+            const string expectedResult = "أَرْبَعَة مائة سَبْعَة و ثَلَاثُونَ ألف خَمْسَةَ عَشَرَ ريال و تِسْعَة و خَمْسُونَ هللة فقط";
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void ShouldReturnArabicTextForSARWhenAmountIsInMillions_3004719()
+        {
+            const decimal input = 3004719.54M;
+            string actualResult = input.ToArabicWords(Currency.SAR);
+            const string expectedResult = "ثَلَاثَة مليون أَرْبَعَة ألف سَبْعَة مائة تِسْعَةَ عَشَرَ ريال و أَرْبَعَة و خَمْسُونَ هللة فقط";
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void ShouldReturnArabicTextForSARWhenAmountIsInMillions_834781()
+        {
+            const decimal input = 834781.67M;
+            string actualResult = input.ToArabicWords(Currency.SAR);
+            const string expectedResult = "ثَمَانِيَة مائة أَرْبَعَة و ثَلَاثُونَ ألف سَبْعَة مائة وَاحِد و ثَمَانُونَ ريال و سَبْعَة و سِتُّونَ هللة فقط";
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        public void ShouldReturnArabicTextForSARWhenAmountIsInMillions_19834781()
+        {
+            const decimal input = 19834781.67M;
+            string actualResult = input.ToArabicWords(Currency.SAR);
+            const string expectedResult = "تِسْعَةَ عَشَرَ مليون ثَمَانِيَة مائة أَرْبَعَة و ثَلَاثُونَ ألف سَبْعَة مائة وَاحِد و ثَمَانُونَ ريال و سَبْعَة و سِتُّونَ هللة فقط";
             Assert.AreEqual(expectedResult, actualResult);
         }
     }

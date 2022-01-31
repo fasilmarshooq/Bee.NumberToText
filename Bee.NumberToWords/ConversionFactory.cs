@@ -79,7 +79,7 @@ namespace Bee.NumberToWords
             if (digits == "0") return _ones[0];
             StringBuilder builder = new();
             int scaleMapIndex;
-            if (_options.Culture == Culture.International)
+            if (_options.Culture == Culture.International || _options.Culture == Culture.Arabic)
                 scaleMapIndex = (int)Math.Ceiling((decimal)digits.Length / 3);
             else
                 scaleMapIndex = (digits.Length - 3) < 1 ? 1 : digits.Length / 2;
@@ -94,7 +94,7 @@ namespace Bee.NumberToWords
                             builder.Append(string.Concat(inWords.Trim(), " "));
                         break;
                     default: //For Everything Greater than hundreds
-                        if (_options.Culture == Culture.International)
+                        if (_options.Culture == Culture.International || _options.Culture == Culture.Arabic)
                         {
                             int length = (digits.Length % (((i - 1) * 3) + 1)) + 1;
                             string hundreds = digits.Substring(0, length);
